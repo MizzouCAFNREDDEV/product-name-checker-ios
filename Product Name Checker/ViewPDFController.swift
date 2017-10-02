@@ -10,9 +10,12 @@ import UIKit
 
 class ViewPDFController: UIViewController {
 
+    public var pdfURL: URL?
+    
+    @IBOutlet weak var webView: UIWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        webView.loadRequest(URLRequest(url: pdfURL!))
         // Do any additional setup after loading the view.
     }
 

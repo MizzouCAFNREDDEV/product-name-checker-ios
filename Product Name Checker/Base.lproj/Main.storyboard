@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Product_Name_Checker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter product name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q2l-2D-9xA">
+                                <rect key="frame" x="55" y="103" width="264" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vHE-od-ZXt">
+                                <rect key="frame" x="136.5" y="203" width="102" height="30"/>
+                                <state key="normal" title="Check Product"/>
+                                <connections>
+                                    <action selector="onCheckProductName:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rS4-Oe-Lex"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yqt-wI-xgC">
+                                <rect key="frame" x="166" y="287" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter print name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2gk-3q-RHO">
+                                <rect key="frame" x="55" y="54" width="264" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rff-7B-1A2">
+                                <rect key="frame" x="154" y="352" width="66" height="30"/>
+                                <state key="normal" title="View PDF"/>
+                                <connections>
+                                    <action selector="onViewPDF:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Aws-Ke-tiF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2gk-3q-RHO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="34" id="0cV-CN-h92"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Q2l-2D-9xA" secondAttribute="trailing" constant="56" id="1JO-Dg-vsJ"/>
+                            <constraint firstItem="yqt-wI-xgC" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="4F2-ym-yTL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2gk-3q-RHO" secondAttribute="trailing" constant="56" id="5hA-5s-7s1"/>
+                            <constraint firstItem="rff-7B-1A2" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Apg-li-GpY"/>
+                            <constraint firstItem="vHE-od-ZXt" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Kgg-lv-ts9"/>
+                            <constraint firstItem="Q2l-2D-9xA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="83" id="i1K-8z-bQz"/>
+                            <constraint firstItem="yqt-wI-xgC" firstAttribute="top" secondItem="vHE-od-ZXt" secondAttribute="bottom" constant="54" id="iPb-u5-mlE"/>
+                            <constraint firstItem="2gk-3q-RHO" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ic8-3X-l3C"/>
+                            <constraint firstItem="Q2l-2D-9xA" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="jeF-BO-vgc"/>
+                            <constraint firstItem="vHE-od-ZXt" firstAttribute="top" secondItem="Q2l-2D-9xA" secondAttribute="bottom" constant="70" id="jhr-qW-L6m"/>
+                            <constraint firstItem="rff-7B-1A2" firstAttribute="top" secondItem="yqt-wI-xgC" secondAttribute="bottom" constant="44" id="pqK-sF-eUx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="printName" destination="2gk-3q-RHO" id="omd-md-gIq"/>
+                        <outlet property="productName" destination="Q2l-2D-9xA" id="AO9-BQ-FEA"/>
+                        <outlet property="resultLabel" destination="yqt-wI-xgC" id="tgM-kw-iRF"/>
+                        <outlet property="viewPDF" destination="rff-7B-1A2" id="mXK-3i-xNA"/>
+                        <segue destination="GrJ-2F-yDg" kind="show" identifier="viewPDF" id="tML-1a-0KZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+        <!--ViewPDF Controller-->
+        <scene sceneID="LpL-nm-qmL">
+            <objects>
+                <viewController id="GrJ-2F-yDg" customClass="ViewPDFController" customModule="Product_Name_Checker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uuM-11-wRz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pq0-Sd-pty">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lCK-Vu-foZ" firstAttribute="trailing" secondItem="pq0-Sd-pty" secondAttribute="trailing" id="JcY-Bb-KkA"/>
+                            <constraint firstItem="pq0-Sd-pty" firstAttribute="leading" secondItem="lCK-Vu-foZ" secondAttribute="leading" id="LJA-if-OJY"/>
+                            <constraint firstItem="lCK-Vu-foZ" firstAttribute="bottom" secondItem="pq0-Sd-pty" secondAttribute="bottom" id="OkN-3I-ooq"/>
+                            <constraint firstItem="pq0-Sd-pty" firstAttribute="top" secondItem="lCK-Vu-foZ" secondAttribute="top" id="mhc-5Z-D9z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lCK-Vu-foZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="pq0-Sd-pty" id="Z2K-EG-tRs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mPZ-sF-KBL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1016.8" y="124.58770614692655"/>
+        </scene>
+    </scenes>
+</document>
